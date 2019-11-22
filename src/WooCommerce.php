@@ -781,7 +781,7 @@ class WooCommerce {
   }
 
   /**
-   * Assign sale category conditionally on product update.
+   * Assigns sale category conditionally on product update.
    *
    * @implements woocommerce_update_product
    */
@@ -822,7 +822,7 @@ class WooCommerce {
   }
 
   /**
-   * Check all conditions that need to be satisfied for adding the sale category to a product.
+   * Checks all conditions that need to be satisfied for adding the sale category to a product.
    */
   public static function checkAddToSaleCategory($product_id, $product = FALSE) {
     if (!$product) {
@@ -868,7 +868,7 @@ class WooCommerce {
   }
 
   /**
-   * Prepare taxonomy terms as select field options
+   * Prepares taxonomy terms as select field options.
    */
   public static function getTaxonomyTermsAsSelectOptions($taxonomy) {
     $terms = get_terms([
